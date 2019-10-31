@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/img_regist"
+        android:layout_width="202dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/register" />
+
+    <ImageView
+        android:id="@+id/form_reg"
+        android:layout_width="361dp"
+        android:layout_height="409dp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_regist"
+        app:srcCompat="@drawable/form_register" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="307dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_regist"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:hint="NIM"
+        android:id="@+id/nim"
+        android:layout_width="307dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:hint="Username"
+        android:id="@+id/userr"
+        android:layout_width="307dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nim"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Registrasi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passs"
+        app:layout_constraintVertical_bias="0.489"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:hint="Password"
+        android:id="@+id/passs"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
